@@ -4,80 +4,76 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		*{
-			margin: 0;
-			padding: 0;
-			border: none;
-		}
 		body{
-			padding-top: 50px;
-			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		    font-size: 14px;
-		    line-height: 1.42857143;
-		    color: #333;
-		    background-color: #fff;
+		  padding-top: 50px;
+		  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		  font-size: 14px;
+		  line-height: 1.42857143;
+		  color: #333;
+		  background-color: #fff;
 		}
 		.tabs{
-			display: block;
-			position: relative;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			width: 180px;
-			height: 40px;
-	/*		box-sizing: border-box;
-			border: 1px solid #e1e1e8;*/
-			border-radius: 4px;
+		  display: block;
+		  position: relative;
+		  left: 50%;
+		  top: 50%;
+		  transform: translate(-50%, -50%);
+		  width: 90%;
+		  max-width: 480px;
+		  height: 40px;
+		  border-radius: 4px;
 		}
 		.tab-input{
-			display: block;
-			position: absolute;
-			width: 33.333%;
-			height: 100%;
-			opacity: 0;
-			z-index: 6;
+		  display: block;
+		  position: absolute;
+		  width: 33.333%;
+		  height: 100%;
+		  margin: 0;
+		  opacity: 0;
+		  z-index: 6;
+		  cursor:pointer;
 		}
 		.tab-input2{
-			left: 33.333%;
+		  left: 33.333%;
 		}
 		.tab-input3{
-			left: 66.666%;
+		  left: 66.666%;
 		}
 		.tab-btn{
-			display: block;
-			position: absolute;
-			width: 33.333%;
-			height: 100%;
-			background: #f8f8f8;
-			border: 1px solid #e7e7e7;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			text-align: center;
-			vertical-align: middle;
+		  display: block;
+		  position: absolute;
+		  width: 33.333%;
+		  height: 100%;
+		  background: #f8f8f8;
+		  border: 1px solid #e7e7e7;
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		  text-align: center;
+		  vertical-align: middle;
 		}
 		.tab-btn2{
-			left: 33.333%;
-			border-left: none;
+		  left: 33.333%;
+		  border-left: none;
 		}
 		.tab-btn3{
-			left: 66.666%;
-			border-left: none;
+		  left: 66.666%;
+		  border-left: none;
 		}
 		.tab-input:checked + .tab-btn{
-			background: #e7e7e7;
+		  background: #e7e7e7;
 		}
 		.tabs>input:first-child+.tab-btn{
-			border-radius: 4px 0 0 4px;
+		  border-radius: 4px 0 0 4px;
 		}
 		.tabs>.tab-btn:last-child{
-			border-radius: 0 4px 4px 0;
+		  border-radius: 0 4px 4px 0;
 		}
 		.tab-btn a{
-			display: block;
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
+		  display: block;
+		  position: relative;
+		  top: 50%;
+		  transform: translateY(-50%);
 		}
 	</style>
 </head>
